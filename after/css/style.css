@@ -25,6 +25,14 @@ body {
         height: 150px;
         margin: 10px 15px 10px 0;
         display: block;
+        padding-top: 35px;
+    }
+    .navbar-brand {
+        padding-top: 30px;
+        
+    }
+    .navbar-brand p {
+        margin-top: 15px;
     }
   }
 
@@ -37,7 +45,7 @@ body {
         display: block;
     }
     .navbar-brand {
-        padding-top: 10px;
+        padding-top: 15px;
         height: 80px;
     }
     .navbar-brand h1 { /*name of restaraunt*/
@@ -64,17 +72,15 @@ body {
     }
     .navbar-brand h1 { /*name of restaraunt*/
         padding-top: 0px;
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
     .navbar-brand p {
         text-transform: uppercase;
-        font-size: .6em;
+        font-size: .3em;
+        margin-top: 0px;
     }
   }
-.navbar-brand {
-    padding-top: 35px;
-    
-}
+
 
 .navbar-brand h1 { /*name of restaraunt*/
     font-family: 'Lora', serif;
@@ -96,7 +102,7 @@ body {
     color: #000;
     text-transform: uppercase;
     font-size: .7em;
-    margin-top: 15px;
+    
 }
 
 .navbar-brand p span {
@@ -106,7 +112,7 @@ body {
 /* Collapsable List Start */
 #nav-list {
     margin-top: 10px;
-    margin-left: 50px;    
+    margin-left: 10px;    
 }
 #nav-list a {
     color: #951C49;
@@ -124,6 +130,7 @@ body {
 #phone a {
     text-align: right;
     padding-bottom: 0;
+    padding-top: 0px;
 }
 #phone div { /*We Deliver*/
     color: #557c3e;
@@ -131,7 +138,7 @@ body {
     padding-right: 15px;
 }
 #collapsable-nav {
-    margin-top: -50px;
+    margin-top: -20px;
     
 }
 /* Collapsable List END */
@@ -140,5 +147,5 @@ body {
 }
 .navbar-header button.navbar-toggler {
     clear: both;
-    margin-top: -30px;
+    
 }
