@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Restaraunt</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+        <link href="css/glyphicons.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <nav id="header-nav" class="navbar navbar-expand-lg navbar-light">
+              <div class="container container-fluid ">
+                <div class="navbar-header d-flex align-items-start">
+                  <!--Logo-->
+                  
+                  <a href="index.html" >
+                    <div id="logo-img" class="log"></div>
+                  </a>
+        
+                  <div class="navbar-brand">
+                    <a href="index.html" ><h1>Бар Помойка</h1></a>
+                    <p>
+                      <img src="images/star-k-logo.png" alt="Kosher certification">
+                      <span>Кошерно</span>
+                    </p>
+                  </div>   
+                  <!--Collapsable button-->
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsable-nav" 
+                  aria-expanded="false" aria-controls="collapsable-nav" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>                    
+                  </button>                              
+                </div>                
+                
+                <!--Collapsable menu (not in header!!! must be in container)-->
+                <div class="collapse navbar-collapse" id="collapsable-nav">
+                  <ul id="nav-list" class="nav navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a href="menu-categories.html" class="nav-link">
+                        <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Менюшка
+                      </a>
+                    </li>
+                    <li class="nav-item" >
+                        <a href="#" class="nav-link">
+                          <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> Ето Мы
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Хуякции
+                        </a>
+                    </li>
+                    <li id="phone" class="nav-item">
+                      <a href="tel:+7 905 526 67 15" class="nav-link"><span>+7 905 526 67 15</span><div>*Сам придешь</div></a>
+                    </li>
+                  </ul><!-- Navbar List End-->
+                </div><!--Collapsable Nav End-->
+              </div><!--Container End-->
+            </nav>
+        
+          </header>
+
+          <div id="call-btn">
+            <a class="btn" href="tel:410-602-5008">
+            <span class="glyphicon glyphicon-earphone"></span> 410-602-5008 </a>
+            <div id="xs-deliver">* We Deliver</div>
+          </div>
+          
+
+        <!--Main body-->
+          <div id="main-content" class="container">
+            <h2 id="menu-categories-title" class="text-center">Бизнес-херанч</h2>
+            <div class="text-center"> Не опаздывать</div>
+
+            <section class="row">
+                <div class="menu-item-tile col-md-6">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="menu-item-photo">
+                                <div>D01</div>
+                                <img src="images/menu/B/B1.jpg" alt="Item" class="img-responsive" width="250" height="150">
+                            </div>
+                            <div class="menu-item-price">$10.95 <span>(pint)</span></div>$14.95 <span>quart</span>
+                        </div>
+                        <div class="menu-item-description col-sm-7">
+                            <h4>Мишанина ебанина</h4>
+                            <p class="menu-item-details">Намешали Лешке окрошки,поросячьей епт еды</p>
+                        </div>
+                    </div>
+                    <hr class="visible-xs">
+                </div>
+            </section>
+          </div> <!--End of home-tiles-->
+          
+        <footer class="panel-footer">
+          <div class="container">
+            <div class="row">
+              <section id="hours" class="col-sm-4">
+                <span>Часы работки:</span><br>
+                Пн-Чт: 9-00 до 17-59 <br>
+                Пт: 9-00 до 16-44 <br>
+                Сб-Вс: Аля Улю
+                <hr class="visible-xs">
+              </section>
+              <section id="address" class="col-sm-4">
+                <span>Хуячим по адресу:</span> <br>
+                РФ,Московия <br>
+                Варшавка в районе Кнопы <br>
+                <p>Но это не точно</p>
+                <hr class="visible-xs">
+              </section>
+              <section id="testimonials" class="col-sm-4">
+                <span> Отзывы</span> <br>
+                <p>Нахер я сюда пошел</p>
+                <p>Никогда больше не пойду</p>
+                <p>Сами жрите свои помои</p>
+              </section>              
+            </div>
+            <div class="text-center">&copy; Копирайт Помойка by Pestov</div>
+          </div>
+
+        </footer>
+        <!--JQUERY-->
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+      
+    </body>
+  
+</html>
