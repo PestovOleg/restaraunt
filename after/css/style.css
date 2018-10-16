@@ -2,16 +2,20 @@ body {
     font-size: 16px;
     color: #fff;
     background-color: #61122f;
-    font-family: 'Oxygen', sans-serif;    
-    
+    font-family: 'Oxygen', sans-serif;
 }
 
+
 /**HEADER **/
+
+.container-fluid {
+    margin-left: 10px;
+}
+
 #header-nav {
     background-color: #f6b319;
     border-radius: 0;
     border: 0;
-    
 }
 .navbar-brand h1 { /*name of restaraunt*/
     font-family: 'Lora', serif;
@@ -42,9 +46,67 @@ body {
 #logo-img, #call-btn, #xs-deliver {    
     display: none;
 }
-
-
-
+#menu-tile, #specials-tile, #map-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0px 1px 5px 1px #cccccc;
+}
+#menu-tile {
+    background: url('../images/menu-tile.jpg') no-repeat;
+    background-position: center;
+}
+#specials-tile {
+    background: url('../images/specials-tile.jpg') no-repeat;
+    background-position: center;
+}
+#menu-tile span, #specials-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+/********FOOTER START***********/
+.panel-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #222;
+    border-top: 0px;
+}
+.panel-footer div.row {
+    margin-bottom: 35px;
+  }
+  #hours, #address {
+    line-height: 2;
+  }
+  #hours > span, #address > span {
+    font-size: 1.3em;
+  }
+  #address p {
+    color: #557c3e;
+    font-size: .8em;
+    line-height: 1.8;
+  }
+  #testimonials {
+    font-style: italic;
+  }
+  #testimonials p:nth-child(2) {
+    margin-top: 25px;
+  }
+  /********FOOTER END***********/
+  
 @media (min-width: 1200px) {
     #logo-img {
         background: url('../images/restaurant-logo_large.png') no-repeat;
@@ -72,9 +134,9 @@ body {
     #jumbotron-main-small-image {
         display: none;
     }
-  }
+}
 
-  @media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     #logo-img {
         background: url('../images/restaurant-logo_medium.png') no-repeat;
         width: 100px;
@@ -86,7 +148,8 @@ body {
         padding-top: 15px;
         height: 80px;
     }
-    .navbar-brand h1 { /*name of restaraunt*/
+    .navbar-brand h1 {
+        /*name of restaraunt*/
         padding-top: 0px;
         font-size: 2.5vw;
     }
@@ -107,7 +170,7 @@ body {
     }
   }
 
-  @media (max-width: 992px) {
+@media (max-width: 992px) {
     #logo-img {
         width: 50px;
         height: 50px;
@@ -150,44 +213,63 @@ body {
     #phone, .hidden-xs {
         display: none;
     }
+    #menu-tile, #specials-tile {
+        
+        margin: 0 auto 15px;
+    }
   }
 
+
 /* Collapsable List Start */
+
 #nav-list {
     margin-top: 10px;
     margin-left: 10px;    
 }
+
 #nav-list a {
     color: #951C49;
     text-align: center;
 }
+
 #nav-list a:hover {
     background-color: #E7E7E7;
 }
+
 #nav-list a span {
     font-size: 1.8em;
 }
+
 #phone {
     margin-top: 5px;
 }
+
 #phone a {
     text-align: right;
     padding-bottom: 0;
     padding-top: 0px;
 }
-#phone div { /*We Deliver*/
+
+#phone div {
+    /*We Deliver*/
     color: #557c3e;
     text-align: right;
     padding-right: 15px;
 }
+
 #collapsable-nav {
     margin-top: -20px;
     
 }
+
+
 /* Collapsable List END */
-.navbar-header button.navbar-toggler, .navbar-header .navbar-toggler-icon {
+
+.navbar-header button.navbar-toggler,
+.navbar-header .navbar-toggler-icon {
     border: 1px solid #61122f;
 }
+
 .navbar-header button.navbar-toggler {
     clear: both;
     
